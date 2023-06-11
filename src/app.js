@@ -1,8 +1,17 @@
-var express = require("express");
-var app = express();
+import express from "express"
+import fs from "fs"
+
+const  app = express();
 
 app.get("/", (req, res) => {
-    res.send("Hello world")
+    fs.readFile('index.html', 'utf8', (err, data) =>{
+        if (err){
+            console.error(err);
+            res.status(500).send('Internal server error');
+        } else {
+            res.send(data)
+        }
+    })
 });
 
-app.listen(3000)
+export default app
