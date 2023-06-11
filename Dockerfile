@@ -7,4 +7,6 @@ WORKDIR /app
 
 RUN npm install
 
-CMD ["node", "server.js"]
+CMD ["node", "server.js", "--verbose"]
+
+RUN npm test
