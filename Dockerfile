@@ -6,7 +6,7 @@ COPY src /app/
 WORKDIR /app
 
 RUN npm install
+RUN npm test
 
 CMD ["node", "server.js", "--verbose"]
 
-RUN npm test
