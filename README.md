@@ -1,7 +1,7 @@
 # Continuous integration project
 CI pipeline executes when pushing to 'dev' branch or when doing a pull request to 'main'
 
-![ISParcialDiagrama drawio](https://github.com/LisandroCanteros/SW_CI-Project/assets/84427419/318d5503-c075-442e-879c-05c06e72d06d)
+![Diagrama](https://github.com/LisandroCanteros/SW_CI-Project/assets/84427419/1acc04a0-4cbf-4d87-854b-1bbff865f223)
 
 ## Status
 ![status badge](https://github.com/LisandroCanteros/SW_CI-Project/actions/workflows/ci.yaml/badge.svg)
